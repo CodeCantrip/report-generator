@@ -1,4 +1,4 @@
-package io.github.codecantrip.report_generator;
+package io.github.codecantrip.reportgenerator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

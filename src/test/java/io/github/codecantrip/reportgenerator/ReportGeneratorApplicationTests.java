@@ -1,4 +1,4 @@
-package io.github.codecantrip.report_generator;
+package io.github.codecantrip.reportgenerator;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
