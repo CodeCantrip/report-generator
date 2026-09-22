@@ -17,13 +17,8 @@ public class PatientController {
         this.patientService = patientService;
     }
     @GetMapping
-    public List<Patient> getAllPatients(){
-        return patientService.getAllPatients();
-    }
-
-    @PostMapping
-    public Patient savePatient(@RequestBody Patient patient){
-        return patientService.savePatient(patient);
+    public List<Patient>  getRespiratoryPatientsByUnitFloor(@RequestParam String unitFloor){
+        return patientService.getRespiratoryPatientsByUnitFloor(unitFloor);
     }
 
 }

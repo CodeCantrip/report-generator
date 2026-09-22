@@ -7,14 +7,16 @@ import jakarta.persistence.Entity;
 public class Niv extends Modality {
     private String nivMode;
     private String nivSettings;
+    private String nivFrequency;
 
     public Niv(){
 
     }
 
-    public Niv(String nivMode, String nivSettings){
+    public Niv(String nivMode, String nivSettings, String nivFrequency){
         this.nivMode = nivMode;
         this.nivSettings = nivSettings;
+        this.nivFrequency = nivFrequency;
     }
 
     public String getNivMode(){
@@ -31,5 +33,15 @@ public class Niv extends Modality {
 
     public void setNivSettings(String nivSettings){
         this.nivSettings = nivSettings;
+
+    }
+
+    public String getNivFrequency() {
+        return nivFrequency;
+    }
+
+    public void setNivFrequency(String nivFrequency){
+        this.nivFrequency = nivFrequency;
     }
 }
+

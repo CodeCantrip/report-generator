@@ -9,7 +9,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 import java.util.UUID;
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
@@ -20,7 +20,9 @@ public abstract class Modality {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID modalityId;
 
+
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "patient_id", nullable = false)
     private Patient patient;
 
@@ -32,11 +34,11 @@ public abstract class Modality {
         return modalityId;
     }
 
-    public Patient getPatientId(){
+    public Patient getPatient(){
         return patient;
     }
 
-    public void Patient (Patient patient){
+    public void setPatient (Patient patient){
         this.patient= patient;
     }
 }

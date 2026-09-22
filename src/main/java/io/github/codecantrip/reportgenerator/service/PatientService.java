@@ -15,11 +15,9 @@ public class PatientService {
     public PatientService(PatientRepository patientRepository){
     this.patientRepository = patientRepository;
     }
-    public List<Patient> getAllPatients(){
-        return patientRepository.findAll();
+
+    public List<Patient> getRespiratoryPatientsByUnitFloor(String unitFloor){
+        return patientRepository.findByUnitFloorAndModalitiesIsNotEmpty(unitFloor);
     }
 
-    public Patient savePatient(Patient patient){
-        return patientRepository.save(patient);
-    }
 }
