@@ -6,6 +6,7 @@ function LoginPage(){
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [loginError, setLoginError] = useState('')
     const navigate = useNavigate()
 
     async function handleLogin(event){
@@ -44,31 +45,39 @@ function LoginPage(){
 
         else{
             console.log('Login Failed')
+            setLoginError('Invalid username or password')
         }
     }
 
-    return(
-        <main>
-            <h1>Login</h1>
-            <form onSubmit={handleLogin}>
-            <input
-            value = {username}
-            onChange = {(event) => setUsername(event.target.value)}
-            />
+    return (
+        <main className="loginPage">
+            <div className="loginBox">
 
-            <input
-                type = "password"
-                value = {password}
-                onChange={(event) => setPassword(event.target.value)}
+                <p className="login-app-title">Clinical Report Generator</p>
+                <h1 className="userLogin">Login</h1>
 
-            />
+                <form onSubmit={handleLogin}>
+                    <input
+                        type="text"
+                        placeholder="Username"
+                        value={username}
+                        onChange={(event) => setUsername(event.target.value)}
+                    />
 
-            <button type = "submit">Login</button>
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
+                    />
 
-            </form>
+                    {loginError && <p>{loginError}</p>}
 
+                    <button type="submit">Login</button>
+                </form>
+            </div>
         </main>
-    )
+    );
 }
 
-export default LoginPage
+export default LoginPage;

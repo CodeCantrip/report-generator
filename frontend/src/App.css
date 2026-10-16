@@ -181,4 +181,221 @@
     right: 0;
     border-right-color: var(--border);
   }
+
+}
+.patient-report {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #dce5ed;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.patient-header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.patient-search-result {
+  border-top: 1px solid #ccc;
+  margin-top: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  text-align: left;
+  font-size: 16px;
+  background-color: #fafbfd;
+}
+
+.patient-search-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.patient-search-header h2 {
+  font-size: 18px;
+}
+
+.selected-patients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.patient-search-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+.first-page-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #304b63;
+  letter-spacing: normal;
+  margin-bottom: 30px;
+}
+.patient-search-button {
+  background-color: #466582;
+  color: white;
+  padding: 6px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+}
+
+.title-underline {
+  width: 75px;
+  height: 3px;
+  background-color: #466582;
+  border-radius: 3px;
+  margin: 0 auto 12px;
+}
+
+.title-subtitle {
+  font-size: 13px;
+  color: #64748b;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+
+.patient-search-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transform: translateX(20px);
+}
+.generate-report-button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.report-modalities {
+  width: 600px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+.selected-patients-section {
+  background-color: #f3f7fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.userLogin {
+  font-size: 20px;
+  color: #64748b;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 2px;
+
+}
+
+.loginBox {
+  width: 350px;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #dce5ed;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loginBox input {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.loginBox button {
+  background-color: #466582;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.loginBox form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.login-app-title {
+  color: #304b63;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.print-report-button {
+  display: block;
+  margin: 24px auto;
+  background-color: #456786;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.print-report-button:hover {
+  background-color: #34516c;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .patient-report,
+  .patient-report * {
+    visibility: visible;
+  }
+
+  .patient-report {
+    break-inside: avoid;
+  }
+
+  .patient-search-controls,
+  .patient-search-result,
+  .selected-patients-section,
+  .print-report-button,
+  .first-page-title,
+  .title-underline,
+  .title-subtitle {
+    display: none !important;
+  }
 }

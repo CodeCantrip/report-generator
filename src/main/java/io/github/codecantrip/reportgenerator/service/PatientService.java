@@ -77,7 +77,8 @@ public class PatientService {
                     patient.getPatientId(),
                     patient.getRoom(),
                     patient.getUnitFloor(),
-                    patient.getName(),
+                    patient.getFirstName(),
+                    patient.getLastName(),
                     patient.getDob(),
                     patient.getCodeStatus(),
                     patient.getDiagnosis()

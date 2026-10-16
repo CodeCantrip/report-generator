@@ -47,7 +47,8 @@ public class DemoDataInitializer implements CommandLineRunner {
         Patient patient1 = new Patient(
                 "312",
                 "ICU",
-                "George Hat",
+                "George",
+                "Hat",
                 LocalDate.of(1965, 4, 12),
                 "Full Code",
                 "COPD exacerbation"
@@ -69,7 +70,8 @@ public class DemoDataInitializer implements CommandLineRunner {
         Patient patient2 = new Patient(
                 "320",
                 "ICU",
-                "George Hatter",
+                "George",
+                "Hatter",
                 LocalDate.of(1960, 6, 15),
                 "Full Code",
                 "CHF"
@@ -81,7 +83,8 @@ public class DemoDataInitializer implements CommandLineRunner {
         Patient patient3 = new Patient(
                 "412",
                 "CCU",
-                "Mike Sat",
+                "Mike",
+                "Sat",
                 LocalDate.of(1983, 5, 12),
                 "Full Code",
                 "Asthma Exacerbation"
@@ -105,7 +108,8 @@ public class DemoDataInitializer implements CommandLineRunner {
         Patient patient4 = new Patient(
                 "301",
                 "ICU",
-                "Scott Pat",
+                "Scott",
+                "Pat",
                 LocalDate.of(1943, 9, 12),
                 "Full Code",
                 "Hypoxic/Hypercapneic Respiratory Failure"
@@ -129,7 +133,8 @@ public class DemoDataInitializer implements CommandLineRunner {
         Patient patient5 = new Patient(
                 "512",
                 "PGCU",
-                "Dwight Shrute",
+                "Dwight",
+                "Shrute",
                 LocalDate.of(1979, 10, 9),
                 "Full Code",
                 "Obesity Hypoventilation/PNA"
@@ -164,7 +169,8 @@ public class DemoDataInitializer implements CommandLineRunner {
         Patient patient6 = new Patient(
                 "515",
                 "PGCU",
-                "William Faulkner",
+                "William",
+                "Faulkner",
                 LocalDate.of(1959, 12, 13),
                 "Full Code",
                 "Acute Kidney Failure"
@@ -175,7 +181,8 @@ public class DemoDataInitializer implements CommandLineRunner {
         Patient patient7 = new Patient(
                 "401",
                 "CCU",
-                "Mary Brick",
+                "Mary",
+                "Brick",
                 LocalDate.of(1947, 11, 10),
                 "Full Code",
                 "Hypoxic Respiratory Failure"
@@ -192,7 +199,8 @@ public class DemoDataInitializer implements CommandLineRunner {
         Patient patient8 = new Patient(
                 "321",
                 "PGCU",
-                "Billy Jean",
+                "Billy",
+                "Jean",
                 LocalDate.of(1955, 2, 26),
                 "Full Code",
                 "Flu B"

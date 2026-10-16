@@ -12,7 +12,8 @@ public class PatientReportDto {
     private UUID patientId;
     private String room;
     private String unitFloor;
-    private String name;
+    private String firstName;
+    private String lastName;
     private LocalDate dob;
     private String codeStatus;
     private String diagnosis;
@@ -21,11 +22,12 @@ public class PatientReportDto {
 
     }
 
-    public PatientReportDto(UUID patientId, String room, String unitFloor, String name, LocalDate dob, String codeStatus, String diagnosis){
+    public PatientReportDto(UUID patientId, String room, String unitFloor, String firstName, String lastName, LocalDate dob, String codeStatus, String diagnosis){
         this.patientId = patientId;
         this.room = room;
         this.unitFloor = unitFloor;
-        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.dob = dob;
         this.codeStatus = codeStatus;
         this.diagnosis = diagnosis;
@@ -43,9 +45,11 @@ public class PatientReportDto {
         return unitFloor;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName(){
+        return firstName;
     }
+
+    public String getLastName() { return lastName; }
 
     public LocalDate getDob() {
         return dob;

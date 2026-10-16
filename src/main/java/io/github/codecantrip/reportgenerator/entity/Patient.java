@@ -28,7 +28,8 @@ public class Patient {
 
     private String room;
     private String unitFloor;
-    private String name;
+    private String firstName;
+    private String lastName;
     private LocalDate dob;
     private String codeStatus;
     private String diagnosis;
@@ -37,10 +38,11 @@ public class Patient {
 
     }
 
-    public Patient(String room, String unitFloor, String name, LocalDate dob, String codeStatus, String diagnosis){
+    public Patient(String room, String unitFloor, String firstName, String lastName, LocalDate dob, String codeStatus, String diagnosis){
         this.room = room;
         this.unitFloor = unitFloor;
-        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.dob = dob;
         this.codeStatus = codeStatus;
         this.diagnosis = diagnosis;
@@ -67,12 +69,20 @@ public class Patient {
         this.unitFloor = unitFloor;
     }
 
-    public String getName(){
-        return name;
+    public String getFirstName(){
+        return firstName;
     }
 
-    public void setName(String name){
-        this.name = name;
+    public void setName(String firstName){
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public LocalDate getDob(){
